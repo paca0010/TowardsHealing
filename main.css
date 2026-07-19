@@ -1,0 +1,335 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Page */
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+
+header h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+
+header p {
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+/*Footer*/
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Card Container */
+.case-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px;
+}
+
+
+/* Remove link styling */
+.card-link {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Card */
+.healing-card {
+
+    width: 350px;
+    height: 250px;
+
+    border: 2px solid black;
+    background-color: white;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.healing-card h2 {
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+
+.healing-card p {
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+/* Case Number */
+.case-number {
+
+    position: absolute;
+
+    top: 20px;
+    left: 20px;
+
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+/* Question Title */
+.healing-card h2 {
+
+    text-align: center;
+
+    font-size: 22px;
+
+    line-height: 1.4;
+}
+
+
+/* Hover Effect */
+.healing-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 8px 8px 0px black;
+}
+
+/* A Note of Gratitude  */
+/*.button {
+    display: inline-block;
+    padding: 12px 25px;
+    margin-top: 20px;
+
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #555;
+}*/
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 40px;
+
+    padding: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    opacity: 0.7;
+}
+
+/*CREDITS*/
+
+section h2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+section {
+    margin-left: 4em;
+    margin-right: 4em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/* ==========================
+   TABLET (iPad)
+   ========================== */
+@media (max-width: 1024px) {
+
+    header {
+        padding: 35px 20px;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+
+    header p {
+        max-width: 90%;
+        font-size: 17px;
+    }
+
+    .navbar {
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        font-size: 17px;
+    }
+
+    .case-container {
+        padding: 30px;
+        gap: 25px;
+    }
+
+    .healing-card {
+        width: 320px;
+        height: 230px;
+        padding: 25px;
+    }
+
+    .healing-card h2 {
+        font-size: 20px;
+    }
+
+    .healing-card p {
+        font-size: 14px;
+    }
+
+    section {
+        margin: 2em;
+    }
+
+}
+
+
+/* ==========================
+   PHONE
+   ========================== */
+@media (max-width: 768px) {
+
+    header {
+        padding: 30px 20px;
+    }
+
+    header h1 {
+        font-size: 34px;
+    }
+
+    header p {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+    }
+
+    .case-container {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .healing-card {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        min-height: 220px;
+        padding: 30px 20px;
+    }
+
+    .case-number {
+        top: 15px;
+        left: 15px;
+        font-size: 13px;
+    }
+
+    .healing-card h2 {
+        font-size: 22px;
+    }
+
+    .healing-card p {
+        font-size: 15px;
+    }
+
+    section {
+        margin: 1.5em;
+    }
+
+}
+
+
+/* ==========================
+   SMALL PHONES
+   ========================== */
+@media (max-width: 480px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .healing-card {
+        padding: 25px 18px;
+    }
+
+    .healing-card h2 {
+        font-size: 20px;
+    }
+
+    .healing-card p {
+        font-size: 14px;
+    }
+
+    .case-number {
+        font-size: 12px;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+}
